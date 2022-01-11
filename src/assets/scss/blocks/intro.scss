@@ -1,0 +1,75 @@
+.intro__inner {
+    width: 100%;
+    height: 60rem;
+    padding-top: 5rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__left {
+    max-width: 50rem;
+    padding-top: 1.8rem;
+}
+
+.intro__title {
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.intro__text {
+    line-height: 1.5;
+    margin-bottom: 3.5rem;
+}
+
+.intro__title, .intro__text, .btn {
+    animation: slide 1s ease-in-out;
+    transition: transform .2s ease-in-out;
+    
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translate3d(0, 100px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.intro__right {
+    position: relative;
+    
+    &:hover {
+        
+        .intro__photo {
+            transform: translate3d(5px, -5px, 0);
+        }
+        
+        .intro__photo__shadow {
+            transform: translate3d(-5px, 5px, 0);
+        }
+    }
+}
+
+.intro__photo, .intro__photo__shadow {
+    transition: transform .5s ease-in-out;
+    width: 24.3rem;
+    height: 24.3rem;
+    border-radius: 50%;
+}
+
+.intro__photo__shadow {
+    position: absolute;
+    top: 1.3rem;
+    left: -0.5rem;
+    background-color: $sky;
+    z-index: -1;
+}

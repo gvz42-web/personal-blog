@@ -1,0 +1,17 @@
+.btn {
+    color: #fff;
+    background-color: $primary;
+    border: none;
+    padding: 1.7rem 2rem;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: transform .2s ease-in-out,
+        background-color .2s ease-in-out;
+    
+    &:hover {
+        background-color: #c75454;
+        transform: scale(1.01);
+    }
+}

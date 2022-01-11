@@ -1,0 +1,18 @@
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social__item {
+    color: $bdark;
+    margin: 0 1.8rem;
+    font-size: 3.5rem;
+    transition: transform .2s ease-in-out,
+        color .2s ease-in-out;
+    
+    &:hover {
+        color: lighten($bdark, 20%);
+        transform: scale(1.2);
+    }
+}

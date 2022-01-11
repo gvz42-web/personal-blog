@@ -1,0 +1,14 @@
+.work__year {
+    width: 6.2rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background-color: $bdark;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.work__year--red {
+    background-color: $primary;
+}

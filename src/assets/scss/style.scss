@@ -1,0 +1,40 @@
+@import "vars";
+@import "vendor/reset";
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Heebo', sans-serif;
+    color: $bdark;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer
+}
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/footer";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/recent-posts";
+@import "blocks/post";
+@import "blocks/featured-works";
+@import "blocks/work";
+@import "blocks/work__year";
+@import "blocks/social";
+@import "blocks/list";

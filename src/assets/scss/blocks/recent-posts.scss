@@ -1,0 +1,34 @@
+.section--recent-posts {
+    width: 100%;
+    background-color: $sky;
+}
+
+.recent-posts__inner {
+    width: 100%;
+    padding: 3rem 0 3rem;
+}
+
+.recent-posts__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2rem;
+}
+
+.recent-posts__title {
+    font-size: 2.2rem;
+}
+
+.recent-posts__viewall {
+    color: $secondary;
+    font-size: 1.6rem;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.recent-posts__items {
+    display: flex;
+    justify-content: space-between;
+}
